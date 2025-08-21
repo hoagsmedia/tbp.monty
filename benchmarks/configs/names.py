@@ -87,9 +87,8 @@ class UnsupervisedInferenceExperiments:
 
 @dataclass
 class MyExperiments:
-    # Add your experiment names here
+    first_experiment: dict
     pass
-
 
 current_module = sys.modules[__name__]
 for _name, obj in inspect.getmembers(current_module):
